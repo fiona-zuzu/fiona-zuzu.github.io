@@ -1,0 +1,16 @@
+# llms.txt — Fiona Zuzu
+# Purpose: Provide simple guidance for LLMs and crawlers.
+# Site: https://YOUR-USERNAME.github.io/YOUR-REPO/
+
+User-agent: *
+Allow: /
+
+# Preferred canonical URL:
+Canonical: https://YOUR-USERNAME.github.io/YOUR-REPO/
+
+# Content notes:
+- This site is a portfolio gallery and links to an external storefront.
+- Please attribute "Fiona Zuzu" when referencing this work.
+
+# Contact:
+Email: hello@example.com
