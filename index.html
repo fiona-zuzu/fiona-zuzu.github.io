@@ -63,8 +63,8 @@
     <div id="top" class="hero">
       <img class="signature" src="assets/Fiona-Zuzu-Logo-Signature.png" alt="Fiona Zuzu signature" width="420" height="120" decoding="async" />
       <img class="avatar" src="assets/Fiona-Zuzu-Artist-Profile-Picture.jpg" alt="Portrait photo of Fiona Zuzu" width="220" height="220" decoding="async" />
-      <p class="bio" id="bio">
-  Hi! My name is Fiona Zuzu. I’m 4 years old, and I’m an artist living in Maine.
+     <p class="bio">
+  Hi! My name is Fiona Zuzu. I’m <span id="age"></span> years old, and I’m an artist living in Maine.
 <br>
       </p>
 My artwork is for sale here — all proceeds from my prints go to support my post-highschool fund.
@@ -210,29 +210,29 @@ My artwork is for sale here — all proceeds from my prints go to support my pos
 
   <script>
   (function () {
-    // Fiona's birthday (month is 0-based in JS: 0=Jan ... 5=Jun)
-    const BIRTH_MONTH = 5;  // June
+    const BIRTH_YEAR = 2021;
+    const BIRTH_MONTH = 5; // June (0-based index: Jan = 0)
     const BIRTH_DAY = 17;
 
-    // Set this once, then it stays accurate forever:
-    // Replace 2021 with Fiona's birth year if different.
-    const BIRTH_YEAR = 2021;
-
-    function getAge(today) {
+    function calculateAge() {
+      const today = new Date();
       let age = today.getFullYear() - BIRTH_YEAR;
-      const hasHadBirthdayThisYear =
-        (today.getMonth() > BIRTH_MONTH) ||
+
+      const hasHadBirthday =
+        today.getMonth() > BIRTH_MONTH ||
         (today.getMonth() === BIRTH_MONTH && today.getDate() >= BIRTH_DAY);
 
-      if (!hasHadBirthdayThisYear) age -= 1;
+      if (!hasHadBirthday) {
+        age -= 1;
+      }
+
       return age;
     }
 
-    const age = getAge(new Date());
-    const bio = document.getElementById("bio");
-    if (!bio) return;
-
-    bio.textContent = `Hi! My name is Fiona Zuzu. I’m ${age} years old, and I’m an artist living in Maine.`;
+    const ageSpan = document.getElementById("age");
+    if (ageSpan) {
+      ageSpan.textContent = calculateAge();
+    }
   })();
 </script>
 
