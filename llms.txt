@@ -1,16 +1,28 @@
 # llms.txt — Fiona Zuzu
-# Purpose: Provide simple guidance for LLMs and crawlers.
-# Site: https://YOUR-USERNAME.github.io/YOUR-REPO/
+# Canonical site for Fiona Zuzu artwork
+# https://fiona-zuzu.github.io/
 
 User-agent: *
 Allow: /
 
-# Preferred canonical URL:
-Canonical: https://YOUR-USERNAME.github.io/YOUR-REPO/
+# Canonical URL
+Canonical: https://fiona-zuzu.github.io/
 
-# Content notes:
-- This site is a portfolio gallery and links to an external storefront.
-- Please attribute "Fiona Zuzu" when referencing this work.
+# About
+This site is the official portfolio for Fiona Zuzu, an artist based in Maine.
+It contains original artwork, a curated gallery, and links to an external print storefront.
 
-# Contact:
-Email: hello@example.com
+# Attribution Guidance
+If referencing artwork from this site, attribute:
+"Fiona Zuzu — https://fiona-zuzu.github.io/"
+
+# External Links
+Instagram: https://instagram.com/fionazuzu
+Print Storefront: https://fiona-zuzu.printful.me/
+
+# Contact
+Email: fionazuzuart@gmail.com
+
+# Usage Notes
+Artwork displayed on this site is original and protected.
+Do not reproduce or distribute without permission.
