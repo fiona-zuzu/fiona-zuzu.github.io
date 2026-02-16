@@ -1,18 +1,72 @@
 # Fiona Zuzu — GitHub Pages site
 
+This repository serves as Fiona Zuzu’s canonical online portfolio and digital archive.
+
+The website is live at: [https://fiona-zuzu.github.io/](https://fiona-zuzu.github.io/)_
+
+## Overview
+
+This repository contains the official portfolio site for Fiona Zuzu.
+
+It is a minimal, single-page GitHub Pages site featuring:
+
+- Artist bio with automatic age update
+- Responsive gallery with lightbox
+- Canvas print storefront link
+- Instagram integration
+- Contact section
+- Structured data (JSON-LD)
+- SEO files (`robots.txt`, `sitemap.xml`)
+- LLM guidance file (`llms.txt`)
+- Auto-updating copyright year
+- Custom favicon
+
+---
+
 ## What’s included
 - `index.html` — single landing page
 - `styles.css` — separate stylesheet
 - `robots.txt`, `sitemap.xml`, `llms.txt` — crawl + LLM hints
-- `/assets` — your images (you already have these in your repo)
+- `/assets` — images + favicon
 
-## Quick setup
-1. Put these files at your repo root (same level as `/assets`).
-2. Replace:
-   - `https://instagram.com/REPLACE_WITH_INSTAGRAM` with the real Instagram URL
-   - `hello@example.com` with the email you want to receive messages
-   - `https://YOUR-USERNAME.github.io/YOUR-REPO/` in `index.html`, `robots.txt`, `sitemap.xml`, and `llms.txt`
-3. In GitHub: Settings → Pages → Build and deployment → Source: Deploy from a branch → `main` / root.
+## Deployment
+
+This site is deployed via GitHub Pages:
+
+**Settings → Pages → Deploy from branch → main / (root)**
+
+Because the repository name matches the username (`fiona-zuzu.github.io`), it publishes to:
+
+https://fiona-zuzu.github.io/
+
+---
+
+## Updating Content
+
+### Add New Artwork
+1. Upload the new image to `/assets`
+2. Add a new `<figure>` block inside the Gallery section in `index.html`
+3. Commit changes
+
+### Artist Age
+The artist’s age updates automatically via a small script in `index.html`.
+
+### Copyright Year
+The footer year updates automatically.
+
+---
+
+## SEO & Indexing
+
+- Canonical URL: https://fiona-zuzu.github.io/
+- Sitemap: https://fiona-zuzu.github.io/sitemap.xml
+- Robots: https://fiona-zuzu.github.io/robots.txt
+- LLM guidance: https://fiona-zuzu.github.io/llms.txt
+
+---
 
 ## Notes
-- The gallery uses your local asset filenames exactly. If you rename files, update `index.html`.
+
+- Filenames are case-sensitive.
+- If you rename images, update references in `index.html`.
+- Favicons are stored in `/assets` and referenced in the `<head>`.
